@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Your Name Here" />
+    <meta name="keywords" content="JavaScript Playground, JS, Introduction to JavaScript, JavaScript Fundamentals" />
+    <meta name="description" content="A demo site to learn JavaScript at Centriq Training.  Includes information about JavaScript, jQuery, and jQuery Plugins" />
+    <title>jQuery Plugins | JavaScript Playground</title>
+    <!-- jQuery UI CSS reference -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/Mint-Choc/jquery-ui.css">
+    <!-- Bootstrap Theme -->
+    <link href="css/bootstrap-flatly-theme.min.css" rel="stylesheet" />
+    <!-- CSS for DataTables.net -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+    <!--Custom CSS  Note that this is last because we want the formatting from it to override all else-->
+    <link href="css/custom.css" rel="stylesheet" />
+    <!--Favicon-->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!--Collapsible nav-->
+    <nav class="navbar-default navbar-fixed-top">
+        <a href="index.html" class="navbar-brand">JavaScript Playground</a>
+        <ul class="topnav">
+            <li class>
+                <a href="index.html">
+                    <span class="glyphicon glyphicon-home"></span> Home
+                </a>
+            </li>
+            <li>
+                <a href="jsintro.html">
+                    JavaScript
+                </a>
+            </li>
+            <li>
+                <a href="jqueryintro.html">
+                    jQuery
+                </a>
+            </li>
+            <li class="active">
+                <a href="jqueryplugins.html">
+                    jQuery Plugins
+                </a>
+            </li>
+            <!--Navbar Dropdown-->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle"
+                   role="button" data-toggle="dropdown" target="_blank"
+                   aria-haspopup="true" aria-expanded="false">
+                    Labs<span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="jslabs.html">
+                            JavaScript
+                        </a>
+                    </li>
+                    <li>
+                        <a href="jquerylabs.html">
+                            jQuery
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+            <!--/Navbar dropdown-->
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav><!--/#navbar-->
+    <!--/Main Nav-->
+    <!--Page Header-->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>jQuery Plugins</h1>
+        </div>
+    </div>
+    <!--/Page Header-->
+    <!--Main Content-->
+    <main class="container">
+        <div class="row">
+            <article class="col-sm-4">
+                <h2>Accordion</h2>
+                <p>
+                    Steps to implement jQuery Plugins
+                </p>
+                <div id="accordion">
+                    <h3>Step 1</h3>
+                    <div>
+                        <p>
+                            Reference to the appropriate version of the jQuery library.
+                        </p>
+                    </div>
+                    <h3>Step 2</h3>
+                    <div>
+                        <p>
+                            Reference to the plugin JS file(s)
+                        </p>
+                    </div>
+                    <h3>Step 3</h3>
+                    <div>
+                        <p>Reference to the plugin CSS file(s)</p>
+                    </div>
+                    <h3>Step 4</h3>
+                    <div>
+                        <p>Add the necessary html structure for the plugin</p>
+                    </div>
+                    <h3>Step 5</h3>
+                    <div>
+                        <p>
+                            Call to the plugin
+                        </p>
+                    </div>
+                    <h3>Step 6</h3>
+                    <div>
+                        <p>
+                            Customize the plugin to meet your needs
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-2">
+                <h2>Datepicker</h2>
+                <div>
+                    <input type="text" id="date-picker" />
+                </div>
+            </article>
+            <article class="col-sm-6">
+                <h2>Tabs</h2>
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                        <li><a href="#tabs-2">Proin dolor</a></li>
+                        <li><a href="#tabs-3">Aenean lacinia</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                    </div>
+                    <div id="tabs-2">
+                        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                    </div>
+                    <div id="tabs-3">
+                        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-sm-12">
+                <h2>Datatables.net</h2>
+                <table id="myTable" class="display">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Website Technology Table</th>
+                        </tr>
+                        <tr>
+                            <th>Technology</th>
+                            <th>Purpose</th>
+                            <th>Web Reference</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Website Structure</td>
+                            <td>
+                                <a href="http://www.w3schools.com/html/default.asp" target="_blank">http://www.w3schools.com/html/default.asp</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>CSS</td>
+                            <td>Layout and Design</td>
+                            <td>
+                                <a href="http://www.w3schools.com/css/default.asp" target="_blank">http://www.w3schools.com/css/default.asp</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Validation / Interactivity</td>
+                            <td>
+                                <a href="http://www.w3schools.com/js/default.asp" target="_blank">http://www.w3schools.com/js/default.asp</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>jQuery</td>
+                            <td>Interactivity</td>
+                            <td>
+                                <a href="http://www.w3schools.com/jquery/default.asp" target="_blank">http://www.w3schools.com/jquery/default.asp</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>Database Interactions</td>
+                            <td>
+                                <a href="http://www.w3schools.com/sql/default.asp" target="_blank">http://www.w3schools.com/sql/default.asp</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+        </div>
+    </main>
+    <!--/Main Content-->
+    <!--Footer-->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left">
+                &copy; 2020 - Breanna Cooper
+            </p>
+            <a href="#" class="btn navbar-btn btn-danger pull-right">
+                Go to the top!
+            </a>
+        </div>
+    </nav>
+    <!--/Footer-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- jQuery UI library reference (not that jQuery is first because jQuery UI is dependent on it-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Bootstrap 3.3.7 minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- JS for Data Tables -->
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+
+    <script> //Many functions can be put in a single ready event
+        $(function () {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+
+            $("#date-picker").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+               
+            $("#tabs").tabs();
+
+            //Plugin function call for DataTables.net
+            $('#myTable').DataTable();
+        });
+
+
+    </script>
+
+
+</body>
+</html>
